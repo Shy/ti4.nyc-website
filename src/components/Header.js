@@ -17,6 +17,7 @@ const Header = (props) => (
                 {props.cfData.map(trick => (
                 <li><a href="javascript:;" onClick={() => {props.onOpenArticle(trick.node.slug)}}>{trick.node.title}</a></li>
                 ))}
+                 <li><a href="javascript:;" onClick={() => {props.onOpenArticle('contact')}}>Contact</a></li>
             </ul>
         </nav>
     </header>
