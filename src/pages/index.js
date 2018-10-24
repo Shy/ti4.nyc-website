@@ -105,6 +105,7 @@ class IndexPage extends React.Component {
               onCloseArticle={this.handleCloseArticle}
               setWrapperRef={this.setWrapperRef}
               cfData = {this.props.data.allContentfulComponent.edges}
+              cfGame = {this.props.data.allContentfulGames.edges}
             />
             <Footer timeout={this.state.timeout} />
           </div>
@@ -118,24 +119,43 @@ class IndexPage extends React.Component {
 export default IndexPage
 
 export const query = graphql`
-        query {
-          allContentfulComponent (sort:{fields:[pageOrder], order:ASC}) {
-            edges {
-              node {
-                title
-                slug
-                pageOrder
-                image {
-                  file {
-                    url
-                  }
-                }
-                copy {
-                  childMarkdownRemark {
-                    html
-                  }
-                }
-              }
+query {
+  allContentfulComponent(sort: {fields: [pageOrder], order: ASC}) {
+    edges {
+      node {
+        title
+        slug
+        pageOrder
+        image {
+          file {
+            url
+          }
+        }
+        copy {
+          childMarkdownRemark {
+            html
+          }
+        }
+      }
+    }
+  }
+  allContentfulGames(sort: {fields: [date]}) {
+    edges {
+      node {
+        zodiacSign
+        date
+        games {
+          signTableNumber
+          game {
+            Players {
+              Name
+              Score
+              Faction
             }
           }
-        }`;
+        }
+      }
+    }
+  }
+}
+`;

@@ -34,8 +34,8 @@ const Layout = ({ children, location }) => {
           <Helmet
             title={data.site.siteMetadata.title}
             meta={[
-              { name: "description", content: "Sample" },
-              { name: "keywords", content: "sample, something" }
+              { name: "description", content: "A group for Twilight Imperium players in New York City to meet and organize games, share resources, and talk about our favorite epic space opera board game! " },
+              { name: "keywords", content: "Twilight Imperium NYC, Twilight Imperium, TI4" }
             ]}
           >
             <html lang="en" />
