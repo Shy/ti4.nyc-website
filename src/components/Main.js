@@ -47,20 +47,20 @@ class Main extends React.Component {
           style={{ display: "none" }}
         >
           <h2 className="major">Game Log</h2>
-          <span className="image main">
-            <img
-              src="https://geekandsundry.com/wp-content/uploads/2017/11/thumbnail_20171117_221209.jpg"
-              alt=""
-            />
-          </span>
           {this.props.cfGame.map(outerElement => (
             <React.Fragment>
               <h3 className="major">
                 {outerElement.node.zodiacSign} - {outerElement.node.date}
               </h3>
+              <span className="image main">
+                <img
+                  src={outerElement.node.image.file.url}
+                />
+              </span>
               {outerElement.node.games.map(innerElement => (
                 <React.Fragment>
                   <h4>{innerElement.signTableNumber}</h4>
+
                   <table>
                     <thead>
                       <tr>

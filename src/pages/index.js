@@ -144,6 +144,12 @@ query {
       node {
         zodiacSign
         date
+        image {
+          file {
+            url
+            fileName
+          }
+        }
         games {
           signTableNumber
           game {
