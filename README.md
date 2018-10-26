@@ -1,8 +1,8 @@
 # TI4 NYC Website
 
-This is [website](https://ti4.nyc/) to help organinze games of Twilight Imperium in NYC. It's forked from the [gatsby-starter-dimension](https://github.com/codebushi/gatsby-starter-dimension).
-
 ![Screenshot of Homepage](./images_readme/homepage.png)
+
+This is [website](https://ti4.nyc/) to help organinze games of Twilight Imperium in NYC. It's forked from the [gatsby-starter-dimension](https://github.com/codebushi/gatsby-starter-dimension).
 
 ### Requirements
 
@@ -44,29 +44,31 @@ contentful-import \
   --content-file import_export/export.json
   ```
 
-Make sure to update the .env file with your spaceID and accessToken. You're able to find both of those keys via app.contentful.com -> Space Settings -> API keys.
+Make sure to update the existing [.env file](https://github.com/Shy/ti4.nyc-website/blob/master/.env) with your spaceID and accessToken. You're able to find both of those keys via app.contentful.com -> Space Settings -> API keys.
 
-If utilizing the primary Contentful CDA leave the host as 'cdn.contentful.com', but if you'd prefer to utilize the [preview API](https://www.contentful.com/developers/docs/references/content-preview-api/), set the host to 'preview.contentful.com'
+If utilizing the primary Contentful CDA leave the host as `cdn.contentful.com`, but if you'd prefer to utilize the [preview API](https://www.contentful.com/developers/docs/references/content-preview-api/), set the host to `preview.contentful.com`.
 
-Additionally you can also optionally install the [TI4 UI extension](https://github.com/Shy/ti4.nyc-ui-extension) that goes along with this project to replace the JSON field with something more editor friendly.
+![TI4 UI-extension in the Contentful interface](./images_readme/ui_extension.png)
+
+Optionally install the [TI4 UI extension](https://github.com/Shy/ti4.nyc-ui-extension) that goes along with this project to replace the JSON field with something more editor friendly.
 
 
 #### Deploy the site on Netlify
 
 If you don't have a Netlify account yet, you can register at [app.netlify.com/signup](https://www.app.netlify.com/signup). Additionally you'll need to fork this repository on GitHub.
 
-Once logged into Netlify click New site from Git and connect to the previously forked repo.
-
 ![Connect to the repo in Netlify](./images_readme/connect.png)
 
-Next in the advanced build settings add the environment variables for the `spaceId`,`accessToken`, and `host` to the variables created in the previous step. Once that's done hit deploy and Netlify will deploy a new site for you.
+Once logged into Netlify click New site from Git and connect to the previously forked repo.
 
 ![Set env_vars](./images_readme/env_vars.png)
 
-The last step in this process is to let Contentful trigger rebuilds in Netlify via webhooks. Grab the URL under "Settings" and "Build & Deploy" and get ready to connect Contentful with Netlify.
+Next in the advanced build settings add the environment variables for the `spaceId`,`accessToken`, and `host` to the variables created in the previous step. Once that's done hit deploy and Netlify will deploy a new site for you.
 
 ![Get webhook URL](./images_readme/webhooknetlify.jpg)
 
-Go to the "Webhooks" section in the Contentful "Settings" and add a Netlify Webhook template in the sidebar or go the [short route](https://app.contentful.com/deeplink?link=webhook-template&id=netlify-deploy-site). Now when you publish new content on Contentful a rebuild of your site will trigger updating the gatsby site.
+The last step in this process is to let Contentful trigger rebuilds in Netlify via webhooks. Grab the URL under "Settings" and "Build & Deploy" and get ready to connect Contentful with Netlify.
 
 ![Set webhook URL](./images_readme/webhookcontentful.jpg)
+
+Go to the "Webhooks" section in the Contentful "Settings" and add a Netlify Webhook template in the sidebar or go the [short route](https://app.contentful.com/deeplink?link=webhook-template&id=netlify-deploy-site). Now when you publish new content on Contentful a rebuild of your site will trigger updating the gatsby site.
