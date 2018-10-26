@@ -63,7 +63,7 @@ Once logged into Netlify click New site from Git and connect to the previously f
 
 ![Set env_vars](./images_readme/env_vars.png)
 
-Next in the advanced build settings add the environment variables for the `spaceId`,`accessToken`, and `host` to the variables created in the previous step. Once that's done hit deploy and Netlify will deploy a new site for you.
+Next in the advanced build settings add the environment variables for the `spaceId`,`accessToken`, and `host` using the variables created in the previous step. Once that's done hit deploy and Netlify will deploy a new site for you.
 
 ![Get webhook URL](./images_readme/webhooknetlify.jpg)
 
