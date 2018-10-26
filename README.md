@@ -46,6 +46,8 @@ contentful-import \
 
 Make sure to update the .env file with your spaceID and accessToken. You're able to find both of those keys via app.contentful.com -> Space Settings -> API keys.
 
+If utilizing the primary Contentful CDA leave the host as 'cdn.contentful.com', but if you'd prefer to utilize the [preview API](https://www.contentful.com/developers/docs/references/content-preview-api/), set the host to 'preview.contentful.com'
+
 Additionally you can also optionally install the [TI4 UI extension](https://github.com/Shy/ti4.nyc-ui-extension) that goes along with this project to replace the JSON field with something more editor friendly.
 
 
