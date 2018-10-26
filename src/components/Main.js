@@ -54,7 +54,7 @@ class Main extends React.Component {
               </h3>
               <span className="image main">
                 <img
-                  src={outerElement.node.image.file.url}
+                  src={outerElement.node.image.file.url} alt={outerElement.node.image.file.fileName}
                 />
               </span>
               {outerElement.node.games.map(innerElement => (

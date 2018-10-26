@@ -129,6 +129,7 @@ query {
         image {
           file {
             url
+            fileName
           }
         }
         copy {
