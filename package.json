@@ -1,10 +1,11 @@
 {
-  "name": "gatsby-starter-dimension-v2",
-  "description": "Gatsby Starter - Dimension V2",
+  "name": "Twilight Imperium NYC",
+  "description": "Twilight Imperium NYC Website forked from Starter - Dimension V2",
   "version": "1.0.0",
-  "author": "Hunter Chang",
+  "author": "Shy Ruparel",
   "dependencies": {
     "@contentful/rich-text-html-renderer": "^2.9.0",
+    "dotenv": "^6.1.0",
     "gatsby": "^2.0.0",
     "gatsby-plugin-manifest": "^2.0.2",
     "gatsby-plugin-offline": "^2.0.5",

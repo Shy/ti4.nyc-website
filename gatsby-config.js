@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env`,
+})
+
 module.exports = {
   siteMetadata: {
     title: "Twilight Imperium NYC",
@@ -23,8 +27,9 @@ module.exports = {
     {
             resolve: `gatsby-source-contentful`,
             options: {
-                spaceId: `dkuja9bpqvhg`,
-                accessToken: `b3d994d9baff5a3d2505a74d000e38e37ac811a7cfe3633257c018b2f3665945`,
+                spaceId: process.env.spaceId,
+                accessToken: process.env.accessToken,
+                host: process.env.host
             },
      },
   `gatsby-transformer-remark`,
