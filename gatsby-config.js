@@ -4,7 +4,7 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: "Twilight Imperium NYC",
+    title: "TI - " + process.env.BRANCH,
     author: "Shy Ruparel",
     description: "Twilight Imperium NYC Website"
   },
@@ -29,7 +29,8 @@ module.exports = {
             options: {
                 spaceId: process.env.spaceId,
                 accessToken: process.env.accessToken,
-                host: process.env.host
+                host: process.env.host,
+                environment: process.env.BRANCH
             },
      },
   `gatsby-transformer-remark`,
