@@ -73,7 +73,9 @@ class Main extends React.Component {
                       {innerElement.game.Players.map(playerElement => (
                         <tr>
                           <td>{playerElement.Name}</td>
-                          <td>{playerElement.Faction}</td>
+                          <td>
+                            {playerElement.Faction}
+                           </td>
                           <td>{playerElement.Score}</td>
                         </tr>
                       ))}
