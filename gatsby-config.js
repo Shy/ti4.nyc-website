@@ -4,7 +4,7 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: "TI - " + process.env.HEAD,
+    title: process.env.HEAD + " - TI Preview",
     author: "Shy Ruparel",
     description: "Twilight Imperium NYC Website"
   },
