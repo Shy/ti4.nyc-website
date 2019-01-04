@@ -19,8 +19,9 @@ const Header = (props) => (
                 {props.cfData.map(trick => (
                     <li><a href="javascript:;" onClick={() => {props.onOpenArticle(trick.node.slug)}}>{trick.node.title}</a></li>
                 ))}
+                <li><a href="https://ti4nyc.typeform.com/to/Apbesg">Sign up for a Game</a></li>
+                <li><a href="https://www.facebook.com/groups/TI.NYC/">Join our FB Group</a></li>
                 <li><a href="javascript:;" onClick={() => {props.onOpenArticle('past-games')}}>Game Log</a></li>
-                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('contact')}}>Contact</a></li>
             </ul>
         </nav>
     </header>
