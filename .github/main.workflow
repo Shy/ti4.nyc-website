@@ -4,6 +4,6 @@ workflow "New workflow" {
 }
 
 action "Contentful Migration" {
-  uses = "Shy/contentful-action/contentful-migrate"
+  uses = "Shy/contentful-action/contentful-migrate@master"
   secrets = ["spaceId", "accessToken"]
 }
