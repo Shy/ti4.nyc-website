@@ -1,4 +1,4 @@
-workflow "New workflow" {
+workflow "Update Content Model and Rebuild Site" {
   on = "push"
   resolves = ["Netlify Rebuild"]
 }
