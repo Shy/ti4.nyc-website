@@ -76,4 +76,4 @@ Go to the "Webhooks" section in the Contentful "Settings" and add a Netlify Webh
 
 #### GitHub Actions
 
-TBD
+This repo is configured to utilize the [Contentful-Action](https://github.com/Shy/contentful-action) repo for changes to the Contentful Content Model. See that repo for instructions regarding usage.
