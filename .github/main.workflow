@@ -9,7 +9,7 @@ action "Contentful Migration" {
 }
 
 action "Netlify Rebuild" {
-  uses = "Shy/contentful-action/netlify-rebuild"
+  uses = "Shy/contentful-action/netlify-rebuild@master"
   needs = ["Contentful Migration"]
   secrets = ["netlifyBuildHook"]
 }
