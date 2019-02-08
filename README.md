@@ -72,3 +72,8 @@ The last step in this process is to let Contentful trigger rebuilds in Netlify v
 ![Set webhook URL](./images_readme/webhookcontentful.jpg)
 
 Go to the "Webhooks" section in the Contentful "Settings" and add a Netlify Webhook template in the sidebar or go the [short route](https://app.contentful.com/deeplink?link=webhook-template&id=netlify-deploy-site). Now when you publish new content on Contentful a rebuild of your site will trigger updating the gatsby site.
+
+
+#### GitHub Actions
+
+TBD
