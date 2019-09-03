@@ -25,7 +25,7 @@ gatsby develop
 
 #### Set up the content model and update the API Keys.
 
-This project comes pre-connected to a live Contentful space. For you to be able to modify and evolve the project, you'll need to create your own Contentful space.
+This project comes pre-connected to a live Contentful space with space ID and access token in the config file. For you to be able to modify and evolve the project, you'll need to create your own Contentful space. You should add your config file to the .GitIgnore if you create your own space. We don't encourage sharing those tokens outside of examples.  
 
 From the Contentful website click on the name of the space in the top left corner of the interface and select 'Add new Space'. Select the blank space option. Name your space, select its default locale (language) and the organization it should belong to. Then hit 'Create Space'.
 
